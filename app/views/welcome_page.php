@@ -566,7 +566,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
     <div class="nav-links">
         <a href="https://lavalust.netlify.app/docs/" target="_blank">Docs</a>
         <a href="https://github.com/ronmarasigan/LavaLust" target="_blank">GitHub</a>
-        <a href="https://lavalust.netlify.app/docs/" target="_blank" class="btn-nav">Get Started →</a>
+        <a href="<?= site_url('student'); ?>" class="btn-nav">Permission →</a>
     </div>
 </nav>
 
@@ -580,11 +580,11 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         A lightweight, expressive PHP MVC framework - Deployed by Ken Jerry.
     </p>
     <div class="hero-actions">
-        <a href="https://lavalust.netlify.app/docs/" target="_blank" class="btn btn-primary">
-            Read the Docs
+        <a href="<?= site_url('student?permission=yes'); ?>" class="btn btn-primary">
+            Allow Access
         </a>
-        <a href="https://github.com/ronmarasigan/LavaLust" target="_blank" class="btn btn-ghost">
-            View on GitHub
+        <a href="<?= site_url('student?permission=no'); ?>" class="btn btn-ghost">
+            Locked
         </a>
     </div>
 </div>
